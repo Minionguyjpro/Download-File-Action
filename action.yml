@@ -1,8 +1,9 @@
 # action.yml
 name: 'Download File Action'
 description: 'GitHub Action to download files from certain URL.'
-icon: 'file'
-color: 'green'
+branding:
+  icon: 'file'
+  color: 'green'
 inputs:
   url:  # id of input
     description: 'URL to download file from'
