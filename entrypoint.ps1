@@ -1,1 +1,1 @@
-Invoke-WebRequest -Uri '$1' -OutFile '$env:GITHUB_WORKSPACE\$env:2'
+Invoke-WebRequest -Uri '$env:url' -OutFile '$env:GITHUB_WORKSPACE\$env:path'
