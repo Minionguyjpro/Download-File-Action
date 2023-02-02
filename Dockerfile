@@ -10,5 +10,5 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install -y powershell
 
-ADD test.ps1 /test.ps1
+ADD entrypoint.ps1 /entrypoint.ps1
 ENTRYPOINT ["pwsh", "/entrypoint.ps1"]
