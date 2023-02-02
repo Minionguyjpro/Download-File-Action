@@ -1,0 +1,17 @@
+# action.yml
+name: 'Download File Action'
+description: 'GitHub Action to download files from certain URL.'
+inputs:
+  url:  # id of input
+    description: 'URL to download file from'
+    required: true
+    default: ''
+  path:
+    description: 'Path to store output file'
+outputs:
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.url }}
+    - ${{ inputs.path }}
