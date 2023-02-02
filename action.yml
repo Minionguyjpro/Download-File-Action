@@ -8,10 +8,10 @@ inputs:
   url:  # id of input
     description: 'URL to download file from'
     required: true
-    default: ''
   path:
     description: 'Path to store output file'
-outputs:
+    required: false
+    default: '/'
 runs:
   using: 'docker'
   image: 'Dockerfile'
