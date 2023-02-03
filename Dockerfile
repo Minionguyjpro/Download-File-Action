@@ -1,4 +1,6 @@
 FROM ubuntu:18.04
+ENV URL=${{ inputs.url }}
+ENV PATH=${{ inputs.path }}
 
 LABEL "com.github.actions.name"="Download File Action"
 LABEL "com.github.actions.description"="GitHub Action to download files from certain URL"
