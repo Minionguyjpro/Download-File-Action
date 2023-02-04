@@ -8,8 +8,8 @@ RUN apt-get update \
     && wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb \
     && dpkg -i packages-microsoft-prod.deb \
     && apt-get upgrade -y && \
-    apt-get install -y git
-    && apt-get install -y powershell
+    apt-get install -y git && \
+    apt-get install -y powershell
 
 
 ADD entrypoint.ps1 /entrypoint.ps1
