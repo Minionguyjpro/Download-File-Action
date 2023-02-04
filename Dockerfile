@@ -1,5 +1,7 @@
 FROM ubuntu:18.04
 
+ENV DEBIAN_FRONTEND noninteractive
+
 LABEL "com.github.actions.name"="Download File Action"
 LABEL "com.github.actions.description"="GitHub Action to download files from certain URL"
 
