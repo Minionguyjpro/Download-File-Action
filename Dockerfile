@@ -9,6 +9,7 @@ RUN apt-get update \
     && dpkg -i packages-microsoft-prod.deb \
     && apt-get update \
     && apt-get install -y powershell
+    && apt-get install -y git
 
 ADD entrypoint.ps1 /entrypoint.ps1
 ENTRYPOINT ["pwsh", "/entrypoint.ps1"]
